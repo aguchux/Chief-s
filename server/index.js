@@ -19,7 +19,7 @@ app.disable('x-powered-by');
 const port = process.env.PORT || 8000;
 
 app.get("/", (req ,res)=>{
-    res.status(201).json("Home GET Request")
+    res.send("Home GET Request")
 })
 
 // app.use("/api", router )
