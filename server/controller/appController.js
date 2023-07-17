@@ -2,7 +2,6 @@ import User from "../model/User.model.js";
 import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt";
 // import ENV from "../config.js"
-import ENV from "../config.js"
 import UserModel from "../model/User.model.js";
 
 

@@ -4,6 +4,10 @@ import morgan from "morgan";
 import connect from "./db/connec.js"
 import router from "./router/route.js";
 
+// Handles .end file read
+import * as dotenv from "dotenv";
+dotenv.config();
+
 const app = express();
 app.use(express.json());
 app.use(morgan("tiny"));
