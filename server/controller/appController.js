@@ -37,8 +37,6 @@ export async function register(req, res) {
         // to check for the existing user
         const existUsername = User.findOne({ username });
         // console.log(existUsername);
-
-
         // to check for the existing email
         const existPassword = new Promise((resolve, reject) => {
             User.findOne({ email }, function (err, user) {
@@ -48,7 +46,6 @@ export async function register(req, res) {
 
             })
         })
-
         Promise.all([existUsername, existEmail]).then(() => {
             if (password) {
                 bcrypt.hash(password, 10)
