@@ -1,16 +1,5 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-client/node_modules
-server/node_modules
 node_modules
 *.env
-server/.env
-/.pnp
-.pnp.js
-
-# testing
-/coverage
 
 # production
 /build
@@ -19,4 +8,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/server/.vercel
+.vercel
+
+old
